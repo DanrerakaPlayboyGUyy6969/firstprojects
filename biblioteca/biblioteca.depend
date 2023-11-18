@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1698342817 source:e:\pto\biblioteca\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+
