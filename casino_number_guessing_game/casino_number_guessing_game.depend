@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1698175757 source:e:\pto\casino_number_guessing_game\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+
