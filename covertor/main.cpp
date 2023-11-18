@@ -5,18 +5,18 @@ using namespace std;
 int main()
 {
     string answer;
-    cout<<"Ce vrei sa converstesti?";
+    cout<<"What do you want to convert?(length/weight/liquids)";
     getline(cin,answer);
-    if(answer=="lungime")
+    if(answer=="length")
     {
         string answer2;
         string aanswer2;
         float a;
-        cout<<"Ce lungime?";
+        cout<<"What length?";
         getline(cin,answer2);
-        cout<<"Cati?";
+        cout<<"How much?";
         cin>>a;
-        cout<<"In ce?";
+        cout<<"In what?";
         cin.ignore();
         getline(cin,aanswer2);
         if(answer2=="mm" && aanswer2=="cm")
@@ -188,16 +188,16 @@ int main()
             cout<<a*10;
         }
     }
-    else if(answer=="greutate")
+    else if(answer=="weight")
     {
         string answer3;
         string aanswer3;
         float c;
-        cout<<"Ce greutate?";
+        cout<<"What weight??";
         getline(cin,answer3);
-        cout<<"Cati?";
+        cout<<"How much?";
         cin>>c;
-        cout<<"In ce?";
+        cout<<"In what?";
         cin.ignore();
         getline(cin,aanswer3);
         if(answer3=="mg" && aanswer3=="cg")
@@ -369,16 +369,16 @@ int main()
             cout<<c*10;
         }
     }
-    else if(answer=="lichide")
+    else if(answer=="liquids")
     {
         string answer4;
         string aanswer4;
         float e;
-        cout<<"Ce lichide?";
+        cout<<"What liquids?";
         getline(cin,answer4);
-        cout<<"Cati?";
+        cout<<"How much?";
         cin>>e;
-        cout<<"In ce?";
+        cout<<"In what?";
         cin.ignore();
         getline(cin,aanswer4);
         if(answer4=="ml" && aanswer4=="cl")
