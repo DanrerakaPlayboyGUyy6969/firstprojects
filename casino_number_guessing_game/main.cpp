@@ -10,26 +10,27 @@ int main()
     string rasp;
     string rasp2;
     string rasp3;
-    cout<<"Introdu suma"<<endl;
+    cout<<"Enter the amount of money that you want to start with:"<<endl;
     cin>>s;
     do
     {
-    cout<<"Buna ziua!Cum va numiti?"<<endl;
+    cout<<"Hello!What's your name?"<<endl;
     cin.ignore();
     getline(cin,nume);
-    cout<<nume<<" cat vrei sa pariezi?"<<endl;
+    cout<<nume<<" how much do you want to bet?"<<endl;
     cin>>p;
-    cout<<"Cat de mare vrei sa fie nr maxim generat?"<<endl;
+    cout<<"What do you want to be the maximum number that can be generated?"<<endl;
     cin>>g;
     gs=g;
     x=gs/100;
-    cout<<"Vrei ca nr tau sa fie aproape de nr generat?"<<endl;
+    cout<<"Do you want to guess a number in range of the generated number?(Yes/No)"<<endl;
     cin.ignore();
     getline(cin,rasp2);
-    if(rasp2=="Nu")
+    if(rasp2=="No")
     {
       srand(time(0));
       n=rand()%g+1;
+      cout<<"Enter the number:";
       cin>>i;
       if(i==n)
       {
@@ -40,14 +41,15 @@ int main()
           s=s-p;
       }
     }
-    else if(rasp2=="Da")
+    else if(rasp2=="Yes")
     {
         float nr,pp;
-        cout<<"Cat de aproape vrei ca nr tau sa fie de nr generat?"<<endl;
+        cout<<"How close?"<<endl;
         cin>>nr;
         pp=100/nr;
         srand(time(0));
         n=rand()%g+1;
+        cout<<"Enter the number:";
         cin>>i;
         if(i>=n-5 && i<=n+5)
         {
@@ -59,10 +61,10 @@ int main()
         }
     }
     cout<<s<<endl;
-    cout<<"Mai joci?";
+    cout<<"Do you want to exti?(Yes/No)";
     cin.ignore();
     getline(cin,rasp3);
     }
-    while(rasp3=="Da");
+    while(rasp3=="No");
     return 0;
 }
