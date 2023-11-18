@@ -13,7 +13,7 @@ public:
     string afiseazacarte1()
 {
     stringstream result;
-    result << "Numele este " << name << "\n" << "Are " << pages << " pagini \n" << "S-a lansat in anul " << release << "\n" << "Romanul a fost scris de "<< author;
+    result << "The name is " << name << "\n" << "It has " << pages << " pages \n" << "It got released in the year " << release << "\n" << "It was wrote by "<< author;
     return result.str();
 }
 };
@@ -25,7 +25,7 @@ public:
     string afiseazacarte2()
 {
     stringstream result;
-    result << "Numele este " << name2 << "\n" << "Are " << pages << " pagini \n" << "S-a lansat in anul " << release << "\n" << "Romanul a fost scris de "<< author;
+    result << "The name is " << name2 << "\n" << "It has " << pages << "  pages \n" << "It got released in the year " << release << "\n" << "It was wrote by "<< author;
     return result.str();
 }
 };
@@ -40,7 +40,7 @@ public:
     string afiseazacarte3()
 {
     stringstream result;
-    result << "Numele este " << name3 << "\n" << "Are " << pages3 << " pagini \n" << "S-a lansat in anul " << release3 << "\n" << "Romanul a fost scris de "<< author3;
+    result << "The name is " << name3 << "\n" << "It has " << pages3 << " pages \n" << "It got released in the year " << release3 << "\n" << "It was wrote by "<< author3;
     return result.str();
 }
 };
@@ -52,7 +52,7 @@ public:
     string afiseazacarte4()
 {
     stringstream result;
-    result << "Numele este " << name4 << "\n" << "Are " << pages3 << " pagini \n" << "S-a lansat in anul " << release3 << "\n" << "Romanul a fost scris de "<< author3;
+    result << "The name is " << name4 << "\n" << "It has " << pages3 << " pages \n" << "It got released in the year " << release3 << "\n" << "It was wrote by "<< author3;
     return result.str();
 }
 };
@@ -63,9 +63,9 @@ int main()
     Carte2 Cartee2("The Hobbit");
     Carte3 Cartee3("Harry Potter");
     Carte4 Cartee4("Fantastic Animals");
-    cout<<"Ce rand doriti sa alageti?"<<endl;
+    cout<<"What row do you want to choose?"<<endl;
     cin>>r;
-    cout<<"Ce carte doriti sa alegeti?"<<endl;
+    cout<<"What book?"<<endl;
     cin>>c;
     string cartii[2][2]=
     {
