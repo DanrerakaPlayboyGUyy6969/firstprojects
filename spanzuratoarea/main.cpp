@@ -9,7 +9,7 @@ int main() {
     int l;
     int n;
     n=0;
-    cout << "Introdu cuvântul secret: ";
+    cout << "Enter the secret word: ";
     getline(cin, word);
     system("cls");
     l = word.length();
@@ -18,7 +18,7 @@ int main() {
     cout<<meto<<endl;
     do {
         n++;
-        cout << "Care e cuvantul?";
+        cout << "What's the word?";
         getline(cin, answer);
         for (int i = 0; i < word.length(); i++) {
             for (int j = 0; j < answer.length(); j++) {
@@ -33,14 +33,14 @@ int main() {
         {
             break;
         }
-    } while (meto != word);
+    } while (answer != word);
     if(n==5)
     {
-        cout<<"Ai pierdut,cuvantul secret era "<<word;
+        cout<<"You lost,the secret word was:"<<word;
     }
     else
     {
-    cout << "Felicitări! Ai ghicit cuvântul: " << word << endl;
+    cout << "Congratulations!You won!The secret word is:" << word << endl;
     }
     return 0;
 }
