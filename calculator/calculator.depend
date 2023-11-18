@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1696446428 source:e:\programe\calculator\main.cpp
+	<iostream>
+	<string>
+
+1696447621 source:e:\pto\calculator\main.cpp
+	<iostream>
+
